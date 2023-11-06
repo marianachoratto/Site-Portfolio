@@ -16,11 +16,10 @@ body{background-color: #000000;
 #nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 25px;
     padding-left: 100px;
     font-size: larger;
-    margin-left: 50px;
 }
 
 nav > a{
