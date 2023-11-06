@@ -1,0 +1,122 @@
+@charset "utf-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{background-color: #000000;
+    color: white;
+    font-weight: bold;
+    font-family: montserrat;
+    height: 100vh;
+}
+
+#nav{
+    padding: 25px;
+    padding-left: 100px;
+    font-size: larger;
+}
+
+nav > a{
+    color: white;
+    display: inline-block; 
+    text-decoration: none;
+    margin-right: 55px;
+}
+
+nav > a:hover{text-decoration: underline;}
+
+main{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    padding: 10px;
+    align-items: center;
+}
+    
+h1{
+    font-size: 36px;
+    font-family: krona one;
+    text-align: justify;
+}
+
+.p1{ 
+    font-size: 24px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+img{
+    width: auto;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#imagem{
+    height: 500px;
+    width: 500px;
+}
+
+.texto{
+    width: 615px; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+button{
+    background-color: #f519a1;
+    padding: 20px 0px ;
+    font:montserrat; 
+    width: 378px;
+    font-family: montserrat;
+    font-size: 24px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.a1{
+    text-decoration: none;
+    color:#000000
+}
+
+.botao{
+    display:flex;
+    gap:15px;
+}
+
+.texto1{
+    text-align: justify;
+    font-size: 14pt;
+    font-weight: normal;
+    text-indent: 30px;
+    margin-top: 10px;
+}
+
+#imagem2{
+    width: 509px;
+    margin-top: -62px;
+    margin-left: 35px;
+}
+
+div > p > a{
+    color: white;
+}
+
+hover{text-decoration: underline;}
+
+.habilidades{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.devicon{
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    margin: 25px;
+}
+
