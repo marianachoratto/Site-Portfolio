@@ -14,9 +14,13 @@ body{background-color: #000000;
 }
 
 #nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     padding: 25px;
     padding-left: 100px;
     font-size: larger;
+    margin-left: 50px;
 }
 
 nav > a{
@@ -30,7 +34,7 @@ nav > a:hover{text-decoration: underline;}
 
 main{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 40px;
     padding: 10px;
     align-items: center;
