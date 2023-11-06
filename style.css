@@ -7,11 +7,16 @@
     box-sizing: border-box;
 }
 
+html{
+    width:100vw;
+}
+
 body{background-color: #000000;
     color: white;
     font-weight: bold;
     font-family: montserrat;
     height: 100vh;
+    width: 100vw;
 }
 
 #nav{
@@ -35,7 +40,8 @@ nav > a:hover{text-decoration: underline;}
 main{ 
     display: flex;
     justify-content: center;
-    margin: 0 40px;
+    margin: 0 35px;
+    margin-right: 0px;
     padding: 10px;
     align-items: center;
 }
@@ -59,9 +65,9 @@ img{
     margin-top: 30px;
 }
 
-#imagem{
-    height: 500px;
-    width: 500px;
+ #imagem{ 
+    height: 520px;
+    width: 520px;
 }
 
 .texto{
@@ -101,7 +107,7 @@ button{
 }
 
 #imagem2{
-    width: 509px;
+    width: 490px;
     margin-top: -62px;
     margin-left: 35px;
 }
@@ -112,7 +118,7 @@ div > p > a{
 
 hover{text-decoration: underline;}
 
-.habilidades{
+.linguagens{
     display: flex;
     flex-wrap: nowrap;
 }
@@ -125,10 +131,10 @@ hover{text-decoration: underline;}
 }
 
 /* notabook grande, pc e TV */
-/* @media (min-width: 1024px){
+ @media (min-width: 1024px) and (max-width:1350px){
     #imagem{
-        height: 350px;
-        width: 350px;
+        margin: 0px;
+        padding: 35px;
     }
 
     .texto{
@@ -140,19 +146,28 @@ hover{text-decoration: underline;}
     }
 
     #imagem2{
-        margin-top: 0px;
+        margin-top: -300px;
         width: 470px;
     }
-} */
+
+    .linguagens{
+        flex-wrap: wrap;
+    }
+}
 /* tablet e notebook pequeno */
 @media (min-width: 768px) and (max-width:1023px){
-    #imagem{
-        height: 350px;
-        width: 350px;
+    body{width: 100vw;}
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 16px;
+        margin: 0px;
     }
 
-    .texto{
-        width: 465px;
+    img{
+        margin: 35px 0px;
     }
 
     .texto1{
@@ -162,6 +177,12 @@ hover{text-decoration: underline;}
     #imagem2{
         margin-top: 0px;
         width: 450px;
+        margin-left: 0px;
+    }
+
+    .linguagens{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -173,11 +194,14 @@ hover{text-decoration: underline;}
         display: flex;
         flex-direction: column;
         width: 100vw;
-        padding: 0px;
+        padding: 16px;
+        margin: 0px;
     }
 
     #imagem{
         width: 100%;
+        margin: 0px;
+        margin-top: 20px;
     }
 
     .botao{
@@ -185,14 +209,31 @@ hover{text-decoration: underline;}
         max-width: 100%;
     }
 
+    .botao button{
+        width: 100%;
+    }
+
     .texto{
         max-width: 100%;
     }
     .texto1{
-        width: 465px;
+        width: 257px;
+    }
+
+    .linguagens{
+        flex-wrap: wrap;
     }
 
     #imagem2{
         margin-top: 28px;
+        margin-left: 0px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .habilidades{
+        width: 320px;
+        text-indent: 0px;
+        font-size: 24pt;
     }
 }
