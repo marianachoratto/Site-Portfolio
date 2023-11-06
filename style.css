@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{background-color: #000000;
@@ -123,81 +124,8 @@ hover{text-decoration: underline;}
     margin: 25px;
 }
 
-@media (max-width: 576px){
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-    .texto{
-        width: 465px;
-    }
-    .texto1{
-        width: 465px;
-    }
-
-    #imagem2{
-        margin-top: 28px;
-    }
-}
-
-@media (max-width: 768px){
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .texto1{
-        width: 465px;
-    }
-
-    #imagem2{
-        margin-top: 28px;
-    }
-}
-
-@media (max-width: 992px){
-    #imagem{
-        height: 350px;
-        width: 350px;
-    }
-
-    .texto{
-        width: 465px;
-    }
-
-    .texto1{
-        width: 465px;
-    }
-
-    #imagem2{
-        margin-top: 0px;
-        width: 450px;
-    }
-}
-
-@media (max-width: 1024px){
-    #imagem{
-        height: 350px;
-        width: 350px;
-    }
-
-    .texto{
-        width: 465px;
-    }
-
-    .texto1{
-        width: 465px;
-    }
-
-    #imagem2{
-        margin-top: 0px;
-        width: 450px;
-    }
-
-
-}
-
-@media (max-width: 1200px){
+/* notabook grande, pc e TV */
+/* @media (min-width: 1024px){
     #imagem{
         height: 350px;
         width: 350px;
@@ -215,5 +143,56 @@ hover{text-decoration: underline;}
         margin-top: 0px;
         width: 470px;
     }
+} */
+/* tablet e notebook pequeno */
+@media (min-width: 768px) and (max-width:1023px){
+    #imagem{
+        height: 350px;
+        width: 350px;
+    }
 
+    .texto{
+        width: 465px;
+    }
+
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 0px;
+        width: 450px;
+    }
+}
+
+/* celular e tablet */
+@media (max-width:767px){
+    body{width: 100vw;}
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0px;
+    }
+
+    #imagem{
+        width: 100%;
+    }
+
+    .botao{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .texto{
+        max-width: 100%;
+    }
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 28px;
+    }
 }
