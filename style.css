@@ -123,3 +123,97 @@ hover{text-decoration: underline;}
     margin: 25px;
 }
 
+@media (max-width: 576px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto{
+        width: 465px;
+    }
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 28px;
+    }
+}
+
+@media (max-width: 992px){
+    #imagem{
+        height: 350px;
+        width: 350px;
+    }
+
+    .texto{
+        width: 465px;
+    }
+
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 0px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 1024px){
+    #imagem{
+        height: 350px;
+        width: 350px;
+    }
+
+    .texto{
+        width: 465px;
+    }
+
+    .texto1{
+        width: 465px;
+    }
+
+    #imagem2{
+        margin-top: 0px;
+        width: 450px;
+    }
+
+
+}
+
+@media (max-width: 1200px){
+    #imagem{
+        height: 350px;
+        width: 350px;
+    }
+
+    .texto{
+        width: 465px;
+    }
+
+    .texto1{
+        width: 534px;
+    }
+
+    #imagem2{
+        margin-top: 0px;
+        width: 470px;
+    }
+
+}
